@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Custom Chess Game</h1>
+            <div id="status">White's Turn</div>
+            <button id="reset-btn">Reset Game</button>
+        </header>
+        <div class="main-layout">
+            <div id="board"></div>
+            <div class="sidebar">
+                <h3>Captured Pieces</h3>
+                <div class="captured-box">
+                    <div class="captured-label">White captured:</div>
+                    <div id="captured-by-white" class="captured-pool"></div>
+                </div>
+                <div class="captured-box">
+                    <div class="captured-label">Black captured:</div>
+                    <div id="captured-by-black" class="captured-pool"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
